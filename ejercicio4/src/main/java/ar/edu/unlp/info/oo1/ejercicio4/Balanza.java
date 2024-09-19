@@ -1,10 +1,15 @@
 package ar.edu.unlp.info.oo1.ejercicio4;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Balanza {
     private List<Producto> productos;
+    
+    public Balanza () {
+    	this.productos = new ArrayList<>();
+    }
 
     public void ponerEnCero() {
         this.productos.clear();

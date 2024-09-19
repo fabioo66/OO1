@@ -2,6 +2,7 @@ package ar.edu.unlp.info.oo1.ejercicio4;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Ticket {
     private LocalDate fecha;
@@ -9,7 +10,7 @@ public class Ticket {
 
     public Ticket(List<Producto> productos) {
         this.fecha = LocalDate.now();
-        this.productos = productos;
+        this.productos = productos.stream().map(p -> new Producto(p.getPeso(), p.getPrecioPorKilo(), p.getDescripcion())).collect(Collectors.toList());
     }
     
     public double impuesto() {
