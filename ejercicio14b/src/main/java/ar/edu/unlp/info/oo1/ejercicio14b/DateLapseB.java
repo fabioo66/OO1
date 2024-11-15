@@ -12,7 +12,7 @@ public class DateLapseB implements IDateLapse{
 	}
 	
 	public LocalDate getFrom() {
-		return this.getFrom();
+		return this.from;
 	}
 	
 	public LocalDate getTo() {
@@ -24,6 +24,10 @@ public class DateLapseB implements IDateLapse{
 	}
 	
 	public boolean includesDate(LocalDate other) {
-		return other.isEqual(this.from) || other.isAfter(this.from) && other.isEqual(this.getTo()) || other.isBefore(this.getTo());
-	}
+        return (other.isEqual(this.from) || other.isAfter(this.from)) && (other.isEqual(this.getTo()) || other.isBefore(this.getTo()));
+    }
+	
+	public boolean overlaps(IDateLapse anotherDateLapse) {
+        return !this.getTo().isBefore(anotherDateLapse.getFrom()) && !this.from.isAfter(anotherDateLapse.getTo());
+    }
 }

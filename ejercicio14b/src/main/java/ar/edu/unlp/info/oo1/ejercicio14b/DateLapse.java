@@ -25,7 +25,11 @@ public class DateLapse implements IDateLapse{
 	}
 	
 	public boolean includesDate(LocalDate other) {
-        return (other.isEqual(from) || other.isAfter(from)) && (other.isEqual(to) || other.isBefore(to));
+        return ((other.isEqual(from) || other.isAfter(from)) && (other.isEqual(to) || other.isBefore(to)));
+    }
+	
+	public boolean overlaps(IDateLapse anotherDateLapse) {
+        return !this.to.isBefore(anotherDateLapse.getFrom()) && !this.from.isAfter(anotherDateLapse.getTo());
     }
 }
 

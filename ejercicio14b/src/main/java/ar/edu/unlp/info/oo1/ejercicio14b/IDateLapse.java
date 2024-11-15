@@ -7,4 +7,5 @@ public interface IDateLapse {
 	public LocalDate getTo();
 	public int sizeInDays();
 	public boolean includesDate(LocalDate other);
+	public boolean overlaps(IDateLapse other);
 }	
