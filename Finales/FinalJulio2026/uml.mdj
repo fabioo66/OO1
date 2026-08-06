@@ -1297,6 +1297,24 @@
 											"height": 13,
 											"text": "+descripcion()",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGf2RKe5q1elts=",
+											"_parent": {
+												"$ref": "AAAAAAGf1A/BSFasz4g="
+											},
+											"model": {
+												"$ref": "AAAAAAGf2RKe2q1bNW4="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 333,
+											"top": 148,
+											"width": 239,
+											"height": 13,
+											"text": "+calcularCostoTotal()",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
@@ -1304,7 +1322,7 @@
 									"left": 328,
 									"top": 128,
 									"width": 249,
-									"height": 23
+									"height": 38
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -3533,6 +3551,14 @@
 								"$ref": "AAAAAAGf1A/BR1ajosc="
 							},
 							"name": "descripcion"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGf2RKe2q1bNW4=",
+							"_parent": {
+								"$ref": "AAAAAAGf1A/BR1ajosc="
+							},
+							"name": "calcularCostoTotal"
 						}
 					]
 				},

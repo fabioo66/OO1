@@ -1,13 +1,15 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrdenDeMantenimiento {
     private String nombre;
-    public List<Trabajo> trabajos;
+    private List<Trabajo> trabajos;
 
     public  OrdenDeMantenimiento(String nombre) {
         this.nombre = nombre;
+        this.trabajos = new ArrayList<>();
     }
 
     public String descripcion() {

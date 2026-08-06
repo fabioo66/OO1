@@ -15,7 +15,7 @@ public class Reemplazo implements Trabajo {
 
     @Override
     public String descripcion() {
-        return "Reemplazo de " + this.cantComponentes + " " + this.nombreComponente + " en sector " + this.sector + " ($" + this.precioUnitario + " cada uno)";
+        return "Reemplazo de " + this.cantComponentes + " " + this.nombreComponente + " en " + this.sector + " ($" + this.precioUnitario + " cada uno)";
     }
 
     @Override
