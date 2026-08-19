@@ -158,7 +158,7 @@
 											"top": 173,
 											"width": 223,
 											"height": 13,
-											"text": "«abstract»+calcularDescuento(): Real",
+											"text": "«abstract»+cotizarPedido(): Real",
 											"horizontalAlignment": 0
 										},
 										{
@@ -382,7 +382,7 @@
 											"top": 508,
 											"width": 199,
 											"height": 13,
-											"text": "+calcularDescuento(): Real",
+											"text": "+cotizarPedido(): Real",
 											"horizontalAlignment": 0
 										}
 									],
@@ -588,7 +588,7 @@
 											"top": 508,
 											"width": 199,
 											"height": 13,
-											"text": "+calcularDescuento(): Real",
+											"text": "+cotizarPedido(): Real",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2434,7 +2434,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGgFN0amDix16Q="
 							},
-							"name": "calcularDescuento",
+							"name": "cotizarPedido",
 							"stereotype": "abstract",
 							"parameters": [
 								{
@@ -2487,7 +2487,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGgFN1a8jjbBAY="
 							},
-							"name": "calcularDescuento",
+							"name": "cotizarPedido",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -2531,7 +2531,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGgFN4XRjkGrXs="
 							},
-							"name": "calcularDescuento",
+							"name": "cotizarPedido",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
